@@ -96,7 +96,7 @@ Every artifact is also available in the browser without the CLI:
 GitHub retains artifacts for **90 days** by default. Ask your GitHub administrator whether a policy overrides this and whether you need to copy artifacts to external storage for longer-term audit requirements.
 
 > [!NOTE]
-> Retention defaults may differ on GitHub Enterprise Server. Check with your admin before relying on the default 90-day window.
+> Retention defaults may differ on [GitHub Enterprise Server](https://github.github.com/gh-aw/reference/self-hosted-runners/#ghes-github-enterprise-server). Check with your admin before relying on the default 90-day window.
 
 ## :white_check_mark: Checkpoint
 

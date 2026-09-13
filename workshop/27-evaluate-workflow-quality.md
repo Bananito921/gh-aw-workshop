@@ -93,7 +93,7 @@ Example record:
 {"id":"issue_created","question":"Does the agent output confirm that a status issue was created?","answer":"YES","model":"small"}
 ```
 
-### Use evals to catch regressions
+### Use [evals](https://github.github.com/gh-aw/reference/glossary/#evals-evals) to catch regressions
 
 When you update your prompt or tools, rerun the workflow and compare answers across runs. A question that flips from `YES` to `NO` is a fast signal that quality regressed and needs investigation.
 
