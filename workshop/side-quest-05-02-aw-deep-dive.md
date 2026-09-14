@@ -73,7 +73,7 @@ Write your classification, then reveal.
 <details>
 <summary>Check Task D answer</summary>
 
-**Agentic (hybrid) workflow.** ESLint is deterministic — same pass/fail result every run. The AI summary requires judgment: reading the diff and deciding how to describe the change.
+**Agentic (hybrid) workflow.** ESLint is [deterministic](https://github.github.com/gh-aw/reference/faq/#determinism) — same pass/fail result every run. The AI summary requires judgment: reading the diff and deciding how to describe the change.
 
 - The ESLint step: deterministic, same result for the same code
 - The AI summary step: different output each run, based on what changed

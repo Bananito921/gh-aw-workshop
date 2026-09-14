@@ -4,7 +4,7 @@
 
 > _Optional: this is the GitHub UI-friendly variant of Method 2. Use it when you prefer or need to complete personal-[billing](https://github.github.com/gh-aw/reference/billing/) setup without terminal commands._
 
-This method stores a [fine-grained Personal Access Token](https://github.github.com/gh-aw/reference/auth/#copilot-default) (PAT) as a repository secret named `COPILOT_GITHUB_TOKEN`. The [agentic workflow](https://github.github.com/gh-aw/introduction/overview/) [engine](https://github.github.com/gh-aw/reference/engines/) picks it up automatically.
+This method stores a [fine-grained Personal Access Token](https://github.github.com/gh-aw/reference/auth/#copilot-default) (PAT) as a [repository secret](https://github.github.com/gh-aw/reference/auth/#adding-secrets-using-the-github-ui) named `COPILOT_GITHUB_TOKEN`. The [agentic workflow](https://github.github.com/gh-aw/introduction/overview/) [engine](https://github.github.com/gh-aw/reference/engines/) picks it up automatically.
 
 ## :clipboard: Before You Start
 

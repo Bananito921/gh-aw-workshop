@@ -58,7 +58,7 @@ Confirm `gh auth status` shows `Logged in to github.com`.
 
 In an org-owned Codespace, `gh` is pre-authenticated with an org-scoped token that cannot
 access the extension marketplace. `gh extension install github/gh-aw` will fail with HTTP 403
-in this environment. The main step now recommends the curl script as the primary install path
+in this environment. The main step now recommends the [standalone installer](https://github.github.com/gh-aw/setup/cli/#alternative-standalone-installer) script as the primary install path
 for this reason.
 
 If you arrived here after a 403, run the install script:

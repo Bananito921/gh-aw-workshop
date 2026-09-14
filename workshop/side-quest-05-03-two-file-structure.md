@@ -89,7 +89,7 @@ Before you reveal the answers below, write a one-sentence definition for each te
 |---|---|
 | [Lock file](https://github.github.com/gh-aw/reference/glossary/#workflow-lock-file-lockyml) | The compiled YAML that GitHub Actions actually runs — never edit it by hand |
 | [Engine](https://github.github.com/gh-aw/reference/engines/) | The AI model provider (for example, GitHub Copilot) used by the workflow |
-| `workflow_dispatch` | A manual trigger — you start the run by clicking a button in the Actions tab |
+| [`workflow_dispatch`](https://github.github.com/gh-aw/reference/triggers/#dispatch-triggers-workflowdispatch) | A manual [trigger](https://github.github.com/gh-aw/reference/triggers/#trigger-types) — you start the run by clicking a button in the Actions tab |
 
 </details>
 
