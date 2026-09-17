@@ -63,7 +63,16 @@ Key differences at a glance:
 
 ## Superset, not replacement
 
-Think of agentic workflows as a superset of Actions:
+Think of agentic workflows as a superset of Actions: the diagram below stacks
+the three layers bottom-up, from the Actions foundation you already run, to
+frontmatter that stays compatible with it, to the Markdown task brief that
+adds agentic reasoning on top.
+
+<picture>
+   <source media="(prefers-color-scheme: dark)" srcset="images/sq0501-superset-layers-dark.svg">
+   <source media="(prefers-color-scheme: light)" srcset="images/sq0501-superset-layers-light.svg">
+   <img alt="Agentic workflows as an Actions-compatible superset, shown as three stacked layers. The base layer is the GitHub Actions foundation: triggers, permissions, runners, and pull-request review. The middle layer is frontmatter, which stays compatible with that foundation. The top layer is the Markdown task brief, which adds agentic reasoning on top without replacing the layers below." src="images/sq0501-superset-layers-light.svg">
+</picture>
 
 - Frontmatter remains compatible with the Actions model you already know.
 - The Markdown body becomes the runtime prompt and can include [templating](https://github.github.com/gh-aw/reference/templating/) and inline agent features.
