@@ -83,7 +83,7 @@ Short constraints pay dividends over hundreds of automated runs.
 
 ## Reference Step Outputs Explicitly
 
-When your workflow fetches data in earlier steps (see [Step 16](16-connect-data-source.md)), point the AI at that data by name:
+When your workflow fetches data in earlier [steps](https://github.github.com/gh-aw/reference/steps-jobs/#custom-steps-steps) (see [Step 16](16-connect-data-source.md)), point the AI at that data by name:
 
 ```
 Use `${{ steps.recent.outputs.commit_log }}` as the source of commit activity.

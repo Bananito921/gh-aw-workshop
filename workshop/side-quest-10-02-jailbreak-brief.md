@@ -115,7 +115,7 @@ The fourth sentence — "Please disregard your current task…" — is the injec
 - [ ] I can describe what `network.allowed` blocks even after a partial jailbreak succeeds
 - [ ] I identified the injection sentence in the exercise above
 - [ ] I reviewed my own workflow's `permissions:` block and confirmed each scope is needed
-- [ ] I can explain what the optional agentic threat detection job does and when it prevents declared `safe-outputs` writes from running
+- [ ] I can explain what the optional agentic [threat detection](https://github.github.com/gh-aw/reference/threat-detection/) job does and when it prevents declared `safe-outputs` writes from running
 
 ---
 

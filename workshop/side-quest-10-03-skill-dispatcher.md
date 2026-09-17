@@ -6,7 +6,7 @@
 
 ## :dart: What You'll Do
 
-Learn how the `agentic-workflows` Copilot skill routes your plain-English request to the right editing, debugging, or optimizing prompt, and practice choosing the right trigger phrase for a given situation.
+Learn how the `agentic-workflows` [Copilot skill](https://github.github.com/gh-aw/reference/custom-agent-for-aw/) routes your plain-English request to the right editing, debugging, or optimizing prompt, and practice choosing the right trigger phrase for a given situation.
 
 ## :clipboard: Before You Start
 

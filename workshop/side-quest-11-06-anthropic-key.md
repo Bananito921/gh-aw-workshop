@@ -96,7 +96,7 @@ If you previously added `copilot-requests: write` for the Copilot engine, you ca
 
 ## Compile your workflow
 
-After updating your frontmatter, compile the workflow to regenerate the lock file:
+After updating your frontmatter, compile the workflow to regenerate the [lock file](https://github.github.com/gh-aw/reference/workflow-structure/#lock-file-header):
 
 ```bash
 gh aw compile

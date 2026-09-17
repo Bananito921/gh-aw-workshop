@@ -15,7 +15,7 @@ An [agentic workflow](https://github.github.com/gh-aw/introduction/overview/) fi
 - **[Frontmatter](https://github.github.com/gh-aw/reference/frontmatter/)** — YAML between `---` fences at the top of the file. This configures how and when the workflow runs.
 - **Markdown body** — the agent's task brief, written below the closing `---`. The AI reads this at runtime.
 
-The file ends in `.md` instead of `.yml` because the [frontmatter](https://github.github.com/gh-aw/reference/frontmatter/) is only the opening config block — the rest of the file is a Markdown brief that the agent reads at runtime. See the [Classic vs. Agentic comparison in Step 5](05-agentic-workflows-intro.md).
+The file ends in `.md` instead of `.yml` because the [frontmatter](https://github.github.com/gh-aw/reference/frontmatter/) is only the opening config block — the rest of the file is a Markdown brief that the agent reads at runtime, and the compiler generates a paired [`.lock.yml`](https://github.github.com/gh-aw/reference/workflow-structure/#file-organization) file that GitHub Actions actually runs. See the [Classic vs. Agentic comparison in Step 5](05-agentic-workflows-intro.md).
 
 ---
 

@@ -2,7 +2,7 @@
 <!-- page-adventure: side-quest -->
 # Side Quest: [Frontmatter](https://github.github.com/gh-aw/reference/frontmatter/) Deep Dive — Part A
 
-> _Optional: configure each of the opening three frontmatter sections of an [agentic workflow](https://github.github.com/gh-aw/introduction/overview/) file — metadata, triggers, and [permissions](https://github.github.com/gh-aw/reference/permissions/). Work through this before building Step 11, then continue to [Part B: Tools, Outputs, and the Agent Body](side-quest-11-08-frontmatter-tools-outputs.md) or return to the main path._
+> _Optional: configure each of the opening three frontmatter sections of an [agentic workflow](https://github.github.com/gh-aw/introduction/overview/) file — metadata, [triggers](https://github.github.com/gh-aw/reference/triggers/), and [permissions](https://github.github.com/gh-aw/reference/permissions/). Work through this before building Step 11, then continue to [Part B: Tools, Outputs, and the Agent Body](side-quest-11-08-frontmatter-tools-outputs.md) or return to the main path._
 
 ## :clipboard: Before You Start
 
@@ -116,7 +116,7 @@ permissions:
 | `contents: read` | Read access to repository files and commits. |
 | `copilot-requests: write` | Required by the [Copilot engine](https://github.github.com/gh-aw/reference/engines/). |
 | `issues: read` | Read access to issue data. |
-| `pull-requests: read` | Read access to pull request data. |
+| `pull-requests: read` | Read access to [pull request](https://github.github.com/gh-aw/reference/triggers/#pull-request-triggers-pullrequest) data. |
 | `actions: read` | Read access to workflow run results. |
 
 **:pencil2: Try it:** Add the `permissions:` block to your draft. Then fill in the correct permission value for each scope:
