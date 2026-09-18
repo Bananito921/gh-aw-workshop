@@ -37,35 +37,15 @@ A GitHub Actions workflow is a YAML file in `.github/workflows/` that tells GitH
     hello.yml   ← each workflow file lives here
 ```
 
-Annotated example — each comment names the key term (this is a standard Actions workflow, not an agentic workflow):
+Every workflow file is built from five named parts: **trigger**, **job**, **runner**, **step**, and **action**.
 
-```yaml .github/workflows/hello-workflow.yml
-# Standard GitHub Actions workflow — not an agentic workflow
-name: Hello Workflow
-
-on: workflow_dispatch         # trigger: the event that starts this workflow
-
-jobs:
-  hello:                      # job: a named group of steps on one machine
-    runs-on: ubuntu-latest    # runner: the machine GitHub provisions for this job
-    steps:
-      - run: echo "Hello from GitHub Actions"   # step: a shell command on the runner
-```
-
-<details>
-<summary>What is a runner?</summary>
-
-A **runner** is the machine GitHub provisions for each job — fresh and isolated for every run.
-
-```markdown .github/workflows/hello-workflow.md
----
-runs-on: ubuntu-latest   # also: windows-latest, macos-latest
----
-```
-
-You can also bring a **[self-hosted runner](https://github.github.com/gh-aw/reference/self-hosted-runners/)** for custom hardware or private networks. Agentic workflows use the same hosted runners.
-
-</details>
+> [!TIP]
+> <details>
+> <summary><b>Optional Side Quest:</b> Want an annotated example and a hands-on labeling exercise to lock in these five terms?</summary>
+>
+> Work through [Side Quest: GitHub Actions Anatomy Primer](side-quest-04-01-actions-anatomy.md), then come back here.
+>
+> </details>
 
 ## Why This Matters for Agentic Workflows
 
@@ -79,48 +59,6 @@ Traditional workflows execute a fixed script path. [Agentic workflows](https://g
 | Output | Files, logs, deploy artifacts | GitHub comments, issues, PRs, or other API writes |
 
 The agentic workflow file you'll author in this workshop is a `.md` file with the same `on:` and `runs-on:` keys you see above, plus a Markdown task brief that tells the AI agent what to do.
-
-## Label a sample workflow
-
-The diagram below shows how the five key parts fit together in every workflow file.
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/04-actions-anatomy-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="images/04-actions-anatomy-light.svg">
-  <img alt="GitHub Actions workflow anatomy: trigger, job, runner, steps, and actions shown as nested layers" src="images/04-actions-anatomy-light.svg">
-</picture>
-
-Before reading on, label each highlighted part of the workflow below with its type:
-`trigger`, `job`, `runner`, `step`, or `action`.
-
-```yaml .github/workflows/hello-workflow.yml
-on: [push]
-jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - run: echo "All checks passed"
-```
-
-Write a label beside each line:
-
-1. `on: [push]`
-2. `test:` (the job name under `jobs:`)
-3. `runs-on: ubuntu-latest`
-4. `uses: actions/checkout@v4`
-5. `run: echo "All checks passed"`
-
-<details>
-<summary>Reveal the labels</summary>
-
-- `on: [push]` → **trigger** (when this workflow runs)
-- `jobs: test:` → **job** (a group of steps that runs on one machine)
-- `runs-on: ubuntu-latest` → **runner** (the machine type GitHub provisions)
-- `uses: actions/checkout@v4` → **action** (a reusable step from the Actions marketplace)
-- `run: echo "All checks passed"` → **step** (a shell command run directly on the runner)
-
-</details>
 
 ## Try it: Explore a real workflow
 
@@ -138,7 +76,6 @@ Open a real workflow file and find the three core building blocks — no termina
 ## :white_check_mark: Checkpoint
 
 - [ ] You can identify `on`, `jobs`, and `steps` in a workflow file
-- [ ] You labeled all five parts of the sample workflow above (trigger, job, runner, action, step)
 - [ ] You know workflows live in `.github/workflows/`
 - [ ] You explored a real workflow and found its trigger, a job name, and a step command
 - [ ] You can describe one way agentic workflows extend classic Actions (same trigger and runner; AI agent replaces fixed shell steps)
