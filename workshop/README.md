@@ -29,6 +29,7 @@ A hands-on workshop that takes you from zero to a fully automated, AI-powered wo
 | 15 | [Make Your Workflow Smarter with Conditional Logic](15-conditional-logic.md) |
 | 16 | [Connect a Live Data Source to Your Workflow](16-connect-data-source.md) |
 | 17 | [Give Your Agent More Tools with MCP](17-add-mcp-tools.md) |
+| 17b | [Control What Your Agent Can Reach on the Network](17b-network-egress-control.md) |
 | 18 | [Share and Reuse Your Agentic Workflows](18-share-and-reuse.md) |
 | 19 | [Build a Research-Driven Next Training Node](19-research-driven-training-node.md) |
 | 20 | [Make Your Workflow Remember Across Runs](20-persistent-memory.md) |

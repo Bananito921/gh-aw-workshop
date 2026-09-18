@@ -138,5 +138,5 @@ Open the run log in **Actions**. You'll see the agent interleaving tool calls wi
 - [ ] The workflow output reflects live data retrieved via MCP, not just static text
 
 <!-- journey: all -->
-**Next:** [Share and Reuse Your Agentic Workflows](18-share-and-reuse.md)
+**Next:** [Control What Your Agent Can Reach on the Network](17b-network-egress-control.md)
 <!-- /journey -->
