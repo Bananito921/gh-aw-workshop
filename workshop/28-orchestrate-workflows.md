@@ -28,9 +28,7 @@ You'll build an orchestrator workflow that reads repository state, decides which
 
 ## Understand workflow orchestration
 
-When a repository needs different kinds of AI work — status reports, PR reviews, cost audits — you can keep each concern in its own focused workflow. An orchestrator connects them: it reads signals from the repository and dispatches the right specialist.
-
-The key primitive is `dispatch-workflow` in [`safe-outputs`](https://github.github.com/gh-aw/reference/safe-outputs/). It lets your orchestrator trigger another workflow in the same repository and optionally pass inputs to it.
+When a repository needs different kinds of AI work — status reports, PR reviews, cost audits — you can keep each concern in its own focused workflow. An orchestrator connects them: it reads signals from the repository and dispatches the right specialist using the [`dispatch-workflow`](https://github.github.com/gh-aw/reference/safe-outputs/) safe-output, which lets one workflow trigger another in the same repository.
 
 <picture>
    <source media="(prefers-color-scheme: dark)" srcset="images/28-orchestrator-routing-dark.svg">
@@ -38,17 +36,19 @@ The key primitive is `dispatch-workflow` in [`safe-outputs`](https://github.gith
    <img alt="Diagram: an orchestrator workflow reads repository signals and dispatches exactly one specialist workflow, or logs a summary and exits when no condition matches." src="images/28-orchestrator-routing-light.svg">
 </picture>
 
-> :thinking: **Predict:** Look at your existing workflows. Which one handles the broadest task? Which handles the narrowest? The broadest is a natural orchestration candidate; the narrowest is a natural specialist.
+> [!TIP]
+> <details>
+> <summary><b>Optional Side Quest:</b> Want the full explanation of why orchestration matters, how `dispatch-workflow` and its `workflows`/`max` fields work, and help choosing good signals before you design your own?</summary>
+>
+> Work through [Side Quest: Understanding Workflow Orchestration and `dispatch-workflow`](side-quest-28-01-orchestration-concepts.md), then come back here.
+>
+> </details>
 
 ## Steps
 
 ### Design your orchestrator
 
-Before writing code, decide:
-
-- What signals will the orchestrator read? (open issues count, PR age, recent commit activity, or a combination)
-- Which specialist workflows will it activate? (at most one per run keeps behavior predictable)
-- What condition routes to each specialist?
+Before writing code, decide what signals your orchestrator will read (for example, open issues count, PR age, or recent commit activity), which specialist workflows it will activate (at most one per run keeps behavior predictable), and what condition routes to each specialist.
 
 A simple decision table helps:
 
