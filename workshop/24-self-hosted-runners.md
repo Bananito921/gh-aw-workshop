@@ -88,6 +88,8 @@ registration settings (Settings → Actions → Runners).
 
 Running in an enterprise environment? See [Side Quest: Self-Hosted Runner Infrastructure Deep Dive](side-quest-24-01-runner-infrastructure.md) for guidance on [ephemeral](https://github.github.com/gh-aw/reference/ephemerals/) and JIT runners, proxy configuration, and [network](https://github.github.com/gh-aw/reference/network/) isolation for air-gapped environments.
 
+Running on a Kubernetes-hosted runner fleet managed by Actions Runner Controller (ARC)? See [Side Quest: Running on Actions Runner Controller (ARC) with Docker-in-Docker](side-quest-24-02-arc-dind-kubernetes.md) for the frontmatter setting agentic workflows require on ARC.
+
 ## :pencil2: Exercise: Compile and commit
 
 Recompile after editing the frontmatter, then commit both files:
