@@ -128,5 +128,5 @@ Check the compiled `.lock.yml` for the activation step that installs your skill,
 - [ ] `gh aw compile` succeeded with no unpinned-skill warnings
 
 <!-- journey: all -->
-Want to choose another branch from the workshop hub? Return to [What's Next? Keep Exploring](14-next-steps.md).
+**Next:** [Apply Governance Defaults Across Your Organization](30-governance-and-defaults.md)
 <!-- /journey -->
