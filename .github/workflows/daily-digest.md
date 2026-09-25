@@ -35,7 +35,7 @@ pull requests.
 
 Title the new issue:
 
-Daily Digest – <date>
+Daily Digest - <date>
 
 If there are no open issues or pull requests, clearly state that in
 the digest.
