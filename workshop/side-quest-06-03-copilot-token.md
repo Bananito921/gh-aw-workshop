@@ -22,7 +22,15 @@ Use the manual guides below when you need or prefer the step-by-step browser pro
 
 ## Choose your method
 
-Choose the method that fits your situation:
+Choose the method that fits your situation. The diagram below shows how the
+two decision points — org billing, then terminal or browser setup — lead to
+each guide.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/side-quest-06-03-auth-method-decision-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="images/side-quest-06-03-auth-method-decision-light.svg">
+  <img alt="Decision flow for choosing a Copilot authentication method: centralized organization billing uses the Copilot requests permission, personal billing uses a COPILOT_GITHUB_TOKEN secret configured via the CLI or browser-only steps" src="images/side-quest-06-03-auth-method-decision-light.svg">
+</picture>
 
 | Method | Best for | Guide |
 |---|---|---|

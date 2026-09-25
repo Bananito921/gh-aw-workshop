@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560"
+     role="img" data-visual-kind="diagram" data-visual-id="side-quest-06-03-auth-method-decision"
+     aria-label="Decision flow for choosing a Copilot authentication method: centralized organization billing uses the Copilot requests permission, personal billing uses a COPILOT_GITHUB_TOKEN secret configured via the CLI or browser-only steps">
+  <rect width="1200" height="560" fill="#f2f5f3"/>
+
+  <!-- Main card -->
+  <rect x="40" y="28" width="1120" height="500" rx="12" ry="12" fill="#ffffff" stroke="#b6bfb8" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="600" y="64" text-anchor="middle" font-family="'Mona Sans', system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#101411">Choosing Your Copilot Authentication Method</text>
+  <text x="600" y="86" text-anchor="middle" font-family="'Mona Sans', system-ui, -apple-system, sans-serif" font-size="13" fill="#232925">Follow the arrows top to bottom to find the setup guide that fits your repository</text>
+
+  <!-- Start node -->
+  <rect data-node="start" x="440" y="106" width="320" height="46" rx="23" fill="#08872b"/>
+  <text x="600" y="134" text-anchor="middle" font-family="'Mona Sans', system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#ffffff">Workflow needs Copilot authentication</text>
+
+  <!-- Arrow down from start -->
+  <line x1="600" y1="152" x2="600" y2="184" stroke="#232925" stroke-width="2" marker-end="url(#arrow-l)"/>
+
+  <!-- Decision 1 diamond -->
+  <polygon data-node="decision-org-billing" points="600,186 745,244 600,302 455,244" fill="#f2f5f3" stroke="#08872b" stroke-width="1.5"/>
+  <text x="600" y="238" text-anchor="middle" font-family="'Mona Sans', system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#101411">Centralized org</text>
+  <text x="600" y="254" text-anchor="middle" font-family="'Mona Sans', system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#101411">Copilot billing enabled?</text>
+
+  <!-- YES arrow left to Method 1 -->
+  <line x1="455" y1="244" x2="245" y2="244" stroke="#08872b" stroke-width="2" marker-end="url(#arrow-green)"/>
+  <text x="350" y="234" text-anchor="middle" font-family="'Mona Sans', system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#08872b">YES</text>
+
+  <!-- NO arrow right to Decision 2 -->
+  <line x1="745" y1="244" x2="900" y2="244" stroke="#909692" stroke-width="2" marker-end="url(#arrow-gray)"/>
+  <text x="822" y="234" text-anchor="middle" font-family="'Mona Sans', system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#232925">NO</text>
+
+  <!-- Method 1 box -->
+  <rect data-node="method-1" x="60" y="196" width="185" height="96" rx="10" fill="#bfffd1" stroke="#08872b" stroke-width="1.5"/>
+  <text x="152" y="219" text-anchor="middle" font-family="'Mona Sans', system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#08872b">Method 1 (recommended)</text>
+  <text x="152" y="240" text-anchor="middle" font-family="'Mona Sans', system-ui, -apple-system, sans-serif" font-size="11" fill="#101411">Copilot Requests</text>
+  <text x="152" y="255" text-anchor="middle" font-family="'Mona Sans', system-ui, -apple-system, sans-serif" font-size="11" fill="#101411">Permission</text>
+  <text x="152" y="275" text-anchor="middle" font-family="'Mona Sans Mono', ui-monospace, monospace" font-size="9.5" fill="#232925">copilot-requests: write</text>
+
+  <!-- Decision 2 diamond -->
+  <polygon data-node="decision-setup-style" points="1000,186 1105,244 1000,302 895,244" fill="#f2f5f3" stroke="#909692" stroke-width="1.5"/>
+  <text x="1000" y="238" text-anchor="middle" font-family="'Mona Sans', system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="600" fill="#101411">Terminal or</text>
+  <text x="1000" y="254" text-anchor="middle" font-family="'Mona Sans', system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="600" fill="#101411">browser-only setup?</text>
+
+  <!-- CLI arrow down-left -->
+  <line x1="950" y1="290" x2="880" y2="350" stroke="#232925" stroke-width="2" marker-end="url(#arrow-l)"/>
+  <text x="885" y="320" text-anchor="middle" font-family="'Mona Sans', system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#232925">CLI</text>
+
+  <!-- Browser arrow down-right -->
+  <line x1="1050" y1="290" x2="1100" y2="350" stroke="#232925" stroke-width="2" marker-end="url(#arrow-l)"/>
+  <text x="1105" y="320" text-anchor="middle" font-family="'Mona Sans', system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#232925">Browser</text>
+
+  <!-- Method 2 CLI box -->
+  <rect data-node="method-2-cli" x="775" y="352" width="210" height="96" rx="10" fill="#e4ebe6" stroke="#909692" stroke-width="1.5"/>
+  <text x="880" y="375" text-anchor="middle" font-family="'Mona Sans', system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#101411">Method 2</text>
+  <text x="880" y="396" text-anchor="middle" font-family="'Mona Sans', system-ui, -apple-system, sans-serif" font-size="11" fill="#101411">Terminal secret setup</text>
+  <text x="880" y="416" text-anchor="middle" font-family="'Mona Sans Mono', ui-monospace, monospace" font-size="9.5" fill="#232925">COPILOT_GITHUB_TOKEN</text>
+  <text x="880" y="434" text-anchor="middle" font-family="'Mona Sans', system-ui, -apple-system, sans-serif" font-size="10" fill="#232925">via gh CLI</text>
+
+  <!-- Method 2 UI-only box -->
+  <rect data-node="method-2-ui" x="1015" y="352" width="185" height="96" rx="10" fill="#e4ebe6" stroke="#909692" stroke-width="1.5"/>
+  <text x="1107" y="375" text-anchor="middle" font-family="'Mona Sans', system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#101411">Method 2 (UI-only)</text>
+  <text x="1107" y="396" text-anchor="middle" font-family="'Mona Sans', system-ui, -apple-system, sans-serif" font-size="11" fill="#101411">Browser secret setup</text>
+  <text x="1107" y="416" text-anchor="middle" font-family="'Mona Sans Mono', ui-monospace, monospace" font-size="9.5" fill="#232925">COPILOT_GITHUB_TOKEN</text>
+  <text x="1107" y="434" text-anchor="middle" font-family="'Mona Sans', system-ui, -apple-system, sans-serif" font-size="10" fill="#232925">no CLI required</text>
+
+  <!-- Method 1 down to ready -->
+  <line x1="152" y1="292" x2="152" y2="470" stroke="#08872b" stroke-width="2"/>
+  <line x1="152" y1="470" x2="565" y2="470" stroke="#08872b" stroke-width="2"/>
+  <line x1="565" y1="470" x2="565" y2="486" stroke="#08872b" stroke-width="2" marker-end="url(#arrow-green)"/>
+
+  <!-- Method 2 CLI down to ready -->
+  <line x1="880" y1="448" x2="880" y2="470" stroke="#909692" stroke-width="2"/>
+  <line x1="880" y1="470" x2="635" y2="470" stroke="#909692" stroke-width="2"/>
+  <line x1="635" y1="470" x2="635" y2="486" stroke="#909692" stroke-width="2" marker-end="url(#arrow-gray)"/>
+
+  <!-- Method 2 UI down to ready -->
+  <line x1="1107" y1="448" x2="1107" y2="500" stroke="#909692" stroke-width="2"/>
+  <line x1="1107" y1="500" x2="680" y2="500" stroke="#909692" stroke-width="2"/>
+  <line x1="680" y1="500" x2="680" y2="486" stroke="#909692" stroke-width="2" marker-end="url(#arrow-gray)"/>
+
+  <!-- Final node -->
+  <rect data-node="ready" x="490" y="486" width="230" height="28" rx="14" fill="#08872b"/>
+  <text x="605" y="505" text-anchor="middle" font-family="'Mona Sans', system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#ffffff">Ready to run your workflow</text>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrow-l" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto">
+      <path d="M0,0 L0,7 L9,3.5 z" fill="#232925"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto">
+      <path d="M0,0 L0,7 L9,3.5 z" fill="#08872b"/>
+    </marker>
+    <marker id="arrow-gray" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto">
+      <path d="M0,0 L0,7 L9,3.5 z" fill="#909692"/>
+    </marker>
+  </defs>
+</svg>
