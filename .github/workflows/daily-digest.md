@@ -1,6 +1,6 @@
 ---
 name: Daily Digest
-model: gpt-5.5
+model: gpt-5.4
 
 on:
   schedule: daily on weekdays
