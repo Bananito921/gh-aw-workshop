@@ -40,7 +40,7 @@ that counts commits from the last 24 hours and writes the result to $GITHUB_OUTP
 as `commit_count`, with step id `recent`.
 ```
 
-The skill adds this step to the frontmatter `steps:` block and recompiles the lock file.
+The skill adds this step to the frontmatter `steps:` block and recompiles the [lock file](https://github.github.com/gh-aw/reference/glossary/#workflow-lock-file-lockyml).
 
 <details>
 <summary>:pencil2: Manual edit path</summary>

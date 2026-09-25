@@ -31,7 +31,7 @@ git add .
 git commit -m "chore: sync lock file" && git push
 ```
 
-**Billing configuration matches the lock file.** Open `daily-report-status.lock.yml` (or `daily-report-status.md`) and confirm the `permissions:` block matches the billing path you chose in Step 7d:
+**Billing configuration matches the lock file.** Open `daily-report-status.lock.yml` (or `daily-report-status.md`) and confirm the [`permissions:`](https://github.github.com/gh-aw/reference/frontmatter/#permissions-permissions) block matches the billing path you chose in Step 7d:
 
 | Billing path | `copilot-requests: write` present |
 |---|---|
